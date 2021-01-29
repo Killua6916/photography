@@ -1,0 +1,195 @@
+main {
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+body {
+margin:0;
+height:auto;
+}
+
+#landing { 
+    background-color: antiquewhite;
+}
+
+#landing h1 { 
+    margin:0;
+    font-weight: 400;
+    font-size:3rem;
+    text-transform: capitalize;
+}
+
+#landing h2 {
+ margin:0;
+ font-size: 1rem;
+ font-weight: 400;
+ text-transform: capitalize;
+ margin-bottom: 20px;
+}
+
+#landing-text {
+    display:flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#landing-image {
+    background-image: url("../images/joel-protasio.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120vh;
+    margin:0;
+}
+
+.btn {
+    padding: 0.5rem;
+    text-decoration: none;
+    border:1px solid #ccc;
+    background-color: #407a66;
+    color: antiquewhite;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: green;
+    color:white;
+}
+
+
+#header {
+    background-color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    margin:0;
+}
+
+.caption h3, p {
+    margin:0;
+    padding:0;
+}
+
+footer {
+    text-align: center;
+    background-color:antiquewhite;
+    padding:10px;
+}
+
+
+.form {
+    width: 69.7%;
+    border: 1px saddlebrown solid;
+    float: left;
+    text-align: center;
+    margin: 5px;
+
+}
+
+
+.address {
+    width: 28%;
+    border: 1px saddlebrown solid;
+    float: left;
+    height: 130px;
+    padding: 5px;
+    height: 295px;
+    text-align: center;
+    margin:5px;
+}
+
+.clear {
+clear:both;
+}
+
+.sticky {
+    position: sticky;
+    bottom:20px;
+    left:20px;
+}
+
+.icon {
+    float: left;
+    margin: 25px;
+    width: 70px;
+    height: auto;
+    position: absolute;
+}
+
+#container {
+    display:flex;
+    flex-direction: row;
+   }
+   
+   #flex1 {
+       padding: 10px;
+       flex: 1;
+       order: 1;
+       background-color: aquamarine;
+       border: 1px solid black;
+   }
+   
+   #flex2 {
+       padding: 10px;
+       flex:1;
+       order: 2;
+       background-color: pink;
+       margin-left: 5px;
+       margin-right: 5px;
+       border: 1px solid black;
+   }
+   
+   #flex3 {
+       padding: 10px;
+       flex:1;
+       order: 3;
+       background-color: rgb(190, 188, 31);
+       border: 1px solid black;
+   }
+
+
+@media screen and (max-width: 700px) {
+ main {width: 100%; font-size: 14px;}
+ body { width: auto; }
+ .btn {padding: 5px 10px;font-size: 12px;}
+ .icon {width: 50px;}
+ #landing h1 {font-size: 30px;}
+ #landing h2 {font-size: 14px;}
+ #landing-image {height: 40vh; background-attachment: initial;}
+ .news {width: 28%; font-size: 14px; height: 38vh}
+.form {width: 59.4%; }
+.address {width: 32%; height: 33vh;}
+}
+
+@media screen and (min-width: 700px) and (max-width:1024px) {
+    main {width: 80%; font-size: 16px;}
+    body { width: auto; }
+    .btn {padding: 8px 14px;font-size: 15px;}
+    .icon {width: 60px;}
+    #landing h1 {font-size: 46px;}
+    #landing h2 {font-size: 22px;}
+    #landing-image {height: 30vh; background-attachment: initial;}
+    .news {width: 29.4%; font-size: 14px; height: 38vh}
+   .form {width: 60%; }
+   .address {width: 34%; height: 35vh;}
+   }
